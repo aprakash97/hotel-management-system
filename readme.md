@@ -1,0 +1,19 @@
+# Hotel Management System
+
+This repository contains the frontend and backend code for the Hotel Management System project.
+
+# Environment Variables
+
+Create a .env file in the backend folder and add the following:
+DATABASE_URL="update your db connection string"
+
+# Setup Instructions
+
+Install dependencies
+pip install -r .\requirements.txt
+
+### Run database migrations (only once at the start)
+alembic upgrade head
+
+# Start server
+uvicorn app.main:app --reload
